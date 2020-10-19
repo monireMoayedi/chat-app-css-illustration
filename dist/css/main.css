@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Rubik", sans-serif; }
+  *:focus {
+    outline: none; }
+
+::placeholder {
+  color: #c6cacd; }
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  position: relative; }
+
+input:focus {
+  border: none; }
+
+.rectangular {
+  height: 100vh;
+  overflow: hidden; }
+  .rectangular-left {
+    width: 33.34%;
+    min-width: 200px;
+    max-width: 480px;
+    height: 960px;
+    border-radius: 15rem;
+    background: linear-gradient(#e942ff, #8838ff);
+    position: absolute;
+    top: -32.5%;
+    left: -4.17%;
+    z-index: -1; }
+  .rectangular-right {
+    width: 33.34%;
+    min-width: 200px;
+    max-width: 480px;
+    height: 960px;
+    border-radius: 15rem;
+    background: #f5f3f7;
+    position: absolute;
+    bottom: -35%;
+    right: -11%;
+    z-index: -1; }
+
+.phone-frame {
+  background: white;
+  width: 250px;
+  height: 505px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 60px 0px #b5b0ba;
+  position: relative;
+  top: 150px;
+  left: 25vw; }
+  .phone-frame-background {
+    background: #f5f3f7;
+    width: 230px;
+    height: 484px;
+    margin: 10px;
+    border-radius: 30px; }
+    .phone-frame-background .chat {
+      height: 275px;
+      font-size: 8px;
+      font-weight: 500;
+      margin-top: 10px;
+      padding: 0 8px; }
+      .phone-frame-background .chat p {
+        padding: 5px 8px; }
+      .phone-frame-background .chat img {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 0px 4px; }
+      .phone-frame-background .chat .image-box {
+        margin: 0 -4px;
+        margin-bottom: 8px;
+        display: flex; }
+      .phone-frame-background .chat-employee {
+        margin-bottom: 8px;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        max-width: 136px; }
+        .phone-frame-background .chat-employee-text {
+          background: #ebe9ec;
+          color: #9241c8;
+          border-radius: 10px 10px 10px 4px;
+          margin-bottom: 8px;
+          margin-right: 8px;
+          max-width: max-content; }
+        .phone-frame-background .chat-employee:last-child {
+          margin-bottom: 0px; }
+      .phone-frame-background .chat-client {
+        max-width: 136px;
+        float: right;
+        margin-bottom: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        .phone-frame-background .chat-client-text {
+          background: white;
+          color: #6e5d7e;
+          border-radius: 10px 10px 4px 10px;
+          margin-bottom: 8px;
+          margin-left: 8px;
+          max-width: max-content; }
+        .phone-frame-background .chat-client .image-box {
+          justify-content: flex-end; }
+        .phone-frame-background .chat-client:last-child {
+          margin-bottom: 0px; }
+    .phone-frame-background .chat-fee {
+      font-size: 8px;
+      font-weight: 500;
+      padding: 0 8px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: 55px; }
+      .phone-frame-background .chat-fee-contract {
+        width: 160px;
+        min-height: 26px;
+        background: linear-gradient(to left, #8838ff, #e942ff);
+        color: white;
+        border-radius: 10px 10px 10px 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+        padding: 6px; }
+        .phone-frame-background .chat-fee-contract #time {
+          display: flex;
+          align-items: center; }
+          .phone-frame-background .chat-fee-contract #time .selectItem {
+            background-color: transparent; }
+          .phone-frame-background .chat-fee-contract #time p {
+            font-weight: 400;
+            padding: 0 8px; }
+      .phone-frame-background .chat-fee-contract:last-child {
+        margin-bottom: 16px; }
+      .phone-frame-background .chat-fee #price {
+        padding: 0 10px;
+        font-size: 0.7rem; }
+    .phone-frame-background-top {
+      width: 100%;
+      height: 66px;
+      position: relative;
+      background: linear-gradient(to right, #8838ff, #e942ff);
+      z-index: 2; }
+      .phone-frame-background-top .heading {
+        color: white;
+        width: 100%;
+        height: 24px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 30px; }
+        .phone-frame-background-top .heading-left {
+          display: flex; }
+          .phone-frame-background-top .heading-left .title {
+            font-size: 0.6rem;
+            line-height: 1.25;
+            margin-left: 8px; }
+            .phone-frame-background-top .heading-left .title .status {
+              color: #d89eff; }
+          .phone-frame-background-top .heading-left .avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid white; }
+        .phone-frame-background-top .heading-right .material-icons {
+          font-size: 14px; }
+    .phone-frame-background-notch {
+      width: 130px;
+      height: 30px;
+      background: white;
+      border-radius: 0 0 18px 18px;
+      position: absolute;
+      top: 0;
+      left: 60px;
+      z-index: 3; }
+    .phone-frame-background-textInput {
+      width: 210px;
+      height: 35px;
+      background: white;
+      border-radius: 30px;
+      position: absolute;
+      left: 20px;
+      bottom: 20px; }
+      .phone-frame-background-textInput .texting {
+        width: 68%;
+        height: 100%;
+        border: none;
+        font-size: 10px;
+        margin: 0 10px 0 20px; }
+      .phone-frame-background-textInput-submit {
+        width: 24px;
+        height: 24px;
+        background: #3e2753;
+        border-radius: 50%;
+        position: relative;
+        float: right;
+        margin: 5px;
+        color: white; }
+
+.text {
+  width: 470px;
+  height: 210px;
+  position: absolute;
+  left: 735px;
+  top: 37%;
+  padding: 5px;
+  padding-left: 0;
+  line-height: 1.6; }
+  .text h2 {
+    font-size: 2.25rem;
+    margin: 1rem 0;
+    color: #3e2753; }
+  .text p {
+    color: #a39daa;
+    font-size: 1.1rem; }
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%; }
+  footer .attribution {
+    margin: auto; }
+
+@media (max-width: 375px) {
+  .rectangular {
+    height: 100vh;
+    overflow: hidden; }
+    .rectangular-left {
+      width: 480px;
+      border-radius: 100rem;
+      top: -50%;
+      left: -293px; }
+    .rectangular-right {
+      width: 480px;
+      border-radius: 100rem;
+      height: 960px;
+      bottom: -50%;
+      right: -293px; }
+  .phone-frame {
+    top: 65px;
+    left: 65px; }
+  .text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 65px;
+    text-align: center;
+    padding: 0 35px; }
+    .text h2 {
+      font-size: 2.25rem;
+      margin: 1rem 0;
+      font-weight: 600; }
+    .text p {
+      font-size: 1.1rem; } }
